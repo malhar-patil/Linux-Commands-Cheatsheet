@@ -40,6 +40,6 @@
 - `wc -w <fileName>`: to print total words in a file.
 - `sort <fileName>`: to sort the contents of a file alphabetically.
 - `sort -r <fileName>`: to sort the contents of a file alphabetically, but in reverse order.
-- `sort -n <fileName>`: to sort numbers based on their numberical values rather than the character order.
+- `sort -n <fileName>`: to sort numbers based on their numerical values rather than the character order.
 - `sort -u <fileName>`: to sort only unique values and ignore duplicates.
 - `sort -k'n' <fileName>`: to sort by field. 'n' denotes the coloumn number that needs to be sorted. It can also be used with numeric values by using the appropriate options.
