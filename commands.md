@@ -25,3 +25,21 @@
 > Tip: "-i" option can be used to confirm the deleteion of files and folders. It also works with nested directories.
 - `mv <source> <destination>`: to move a file/files and directories from one location to another.
 - `mv <currentName> <newName>`: to rename the files and folders.
+- `cp <source> <destination>`: to create copies of files and folders/directories.
+- `cat <file1> [<file2>]`: to read the contents of a file and print them out.
+- `tac <fileName>`: to print the contents of a file in reverse, i.e. the last line in the file will be printed first and so on.
+- `rev <fileName>`: to print the contents of a file in reverse order "horizontally". eg. "abc" will be printed as "cba".
+- `less <fileName>`: to display the contents of a file one page at a time. (Use 'f' and 'b' keys to go one page forward or backward. Alternatively "up" and "down" arrow keys can be used to scroll by one line.)
+- `head <fileName>`: to print the first 10 lines of a file.
+- `head -n <fileName>`: to print first n lines of a file.
+- `head -c <fileName>`: to print 'c' bytes of data from the specified file.
+- `tail <fileName>`: to print the last 10 lines of the file.
+> Note: "-n" and "-c" options also work with "tail" command.
+- `wc <fileName>`: to print no. of lines, words and characters present in a file.
+- `wc -l <fileName>`: to print the no. of lines of a file.
+- `wc -w <fileName>`: to print total words in a file.
+- `sort <fileName>`: to sort the contents of a file alphabetically.
+- `sort -r <fileName>`: to sort the contents of a file alphabetically, but in reverse order.
+- `sort -n <fileName>`: to sort numbers based on their numberical values rather than the character order.
+- `sort -u <fileName>`: to sort only unique values and ignore duplicates.
+- `sort -k'n' <fileName>`: to sort by field. 'n' denotes the coloumn number that needs to be sorted. It can also be used with numeric values by using the appropriate options.
