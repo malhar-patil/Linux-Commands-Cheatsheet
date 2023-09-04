@@ -3,7 +3,7 @@
 - `whoami`: to display the username of the currently logged-in user.
 - `passwd`: to change the user's password.
 - `man <command>`: to display the manual pages of a command and their available options.
-> Tip: To search for a specific keyword inside the man page, press '/' key followed by the keyword.
+   - To search for a specific keyword inside the man page, press '/' key followed by the keyword.
 - `type <command>`: to display the information about command type.
 - `<command> --help`: to find documentation for those commands whose man pages do not exist.
 - `pwd`: to print the path of the current working directory starting frorm the root.
@@ -12,8 +12,8 @@
 - `ls -l`: to list the contents of a directory in long listing format.
 - `cd`: to change the current working directory in the terminal.
 - `cd ..`: to move one level up from current working directory into the parent directory.
-> Note:
-> In linux, '~' (tilde character) is used to represent the current user's home directory, and '/' (forward slash) is used to represent the user's root directory.
+> Note: In linux, '~' (tilde character) is used to represent the current user's home directory, and '/' (forward slash) is used to represent the user's root directory.
+- `echo <message>`: to display text or output to terminal.
 - `touch <file.txt>`: to create new empty files or to update the access and modification date to current time if the file already exists.
 - `file <fileName>`: to determine the file type of a specified file.
 - `mkdir <newDirectoryName>`: to create a new working directory.
@@ -22,7 +22,7 @@
 - `rm <fileName>`: to remove/ delete a file.
 - `rm -d <folderName>`: to delete an empty folders.
 - `rm -r <folderName>`: to delete non-empty folders.
-> Tip: "-i" option can be used to confirm the deleteion of files and folders. It also works with nested directories.
+   - Tip: "-i" (iterative) option can be used to confirm the deleteion of files and folders. It also works with nested directories.
 - `mv <source> <destination>`: to move a file/files and directories from one location to another.
 - `mv <currentName> <newName>`: to rename the files and folders.
 - `cp <source> <destination>`: to create copies of files and folders/directories.
@@ -43,3 +43,11 @@
 - `sort -n <fileName>`: to sort numbers based on their numerical values rather than the character order.
 - `sort -u <fileName>`: to sort only unique values and ignore duplicates.
 - `sort -k'n' <fileName>`: to sort by field. 'n' denotes the coloumn number that needs to be sorted. It can also be used with numeric values by using the appropriate options.
+- `history`: to display the previously executed shell commands in the order they were executed. To reuse the command without typing it again, we can reference its number with '!' symbol. eg. `!420`.
+- `tr`: to translate, delete or merge characters or words. Refer the man page of explore all the options of 'tr' command.
+- `locate <fileName/ Path>`: to quickly locate files and directories on the system. `locate` command uses pre-generated database for searching.
+   - Useful options often used with `locate` command:
+     1) '-i' to ignore the casing.
+     2) '-l' or '--limit' to limit the number of entries that locate retrives.
+     3) '-e' prints only the entries that are present at the time locate is run.
+- `sudo updatedb`: to update the database used by locate command.
