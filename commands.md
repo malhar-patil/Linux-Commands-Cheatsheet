@@ -55,3 +55,14 @@
 - `find <filePath>/`: to find files and folders by path.
 - `find -type f`: to search and list only the regular files within the current directory and its sub-directories.
 - `find -type d`: to search and list for directories within the current directory and its sub-directories.
+- `find -name "<fileName>"` to search for a file with a specific pattern.
+   - `-i` option can be used with `-name` option to avoid casing.
+- `find -size ±<fileSize>`: to find files with a specific file size. We can search for exact file size or use '+' or '-' symbols to specify a range of values. For eg. `find -size +20M` will list all the files whose sizes are greater than 20 MB.
+- `find -user <Username>`: to search for files and directories owned by specific user.
+> Note: All the options mentioned above for `find` command can be combined together to further narrow down the search and get more specific results.
+- Commonly used `find` options to filter the results based on time are:
+  - `-amin n`: used to find files that were last accessed (when the file was last read or opened). n minutes ago. We can specify +n for "greater than n minutes
+     ago" and -n for "less than n minutes ago".
+  - `-mmin n`: used to find files that were last modified (when the content of the file was last modified) n minutes ago.
+  - `-cmin n`: sused to find files that were last changed (when the file was last modified or had its attributes changed) n minutes ago.
+ 
