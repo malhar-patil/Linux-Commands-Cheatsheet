@@ -45,6 +45,7 @@
 - `sort -k'n' <fileName>`: to sort by field. 'n' denotes the coloumn number that needs to be sorted. It can also be used with numeric values by using the appropriate options.
 - `history`: to display the previously executed shell commands in the order they were executed. To reuse the command without typing it again, we can reference its number with '!' symbol. eg. `!420`.
 - `tr`: to translate, delete or merge characters or words. Refer the man page of explore all the options of 'tr' command.
+- `tee`: to redirect output of the command to both, terminal (standard ouput) and file simultaneously.
 - `locate <fileName/ Path>`: to quickly locate files and directories on the system. `locate` command uses pre-generated database for searching.
    - Useful options often used with `locate` command:
      1) '-i' to ignore the casing.
@@ -61,8 +62,33 @@
 - `find -user <Username>`: to search for files and directories owned by specific user.
 > Note: All the options mentioned above for `find` command can be combined together to further narrow down the search and get more specific results.
 - Commonly used `find` options to filter the results based on time are:
-  - `-amin n`: used to find files that were last accessed (when the file was last read or opened). n minutes ago. We can specify +n for "greater than n minutes
+  - `-amin n`: to find files that were last accessed (when the file was last read or opened). n minutes ago. We can specify +n for "greater than n minutes
      ago" and -n for "less than n minutes ago".
-  - `-mmin n`: used to find files that were last modified (when the content of the file was last modified) n minutes ago.
-  - `-cmin n`: sused to find files that were last changed (when the file was last modified or had its attributes changed) n minutes ago.
+  - `-mmin n`: to find files that were last modified (when the content of the file was last modified) n minutes ago.
+  - `-cmin n`: to find files that were last changed (when the file was last modified or had its attributes changed) n minutes ago.
+- `find -exec {} ;`: to execute a specified command on each file or item found by the find command. For eg. `find -name "broken*" -exec rm '{}' ';'` will delete all the files that start with "broken" in the file name.
+   - Note: We need to wrap the {} and ; in quotes because those characters have special meanings otherwise.
+- `xargs`: xargs reads items from standard input, separated by blanks (spaces or newlines) and then executes a command using those items.
+  - For eg. `echo "Folder1" "Folder2" | mkdir` will give an error as mkdir expects us to pass arguments and not standard inputs. Instead we can use `echo "Folder1" "Folder2" | xargs mkdir` command, which will create two directories "Folder1" and "Folder2".
+- `grep <PATTERN> <FILENAME>`: to search and filter text based on the pattern provided within a file. Eg. `grep "indigo" colors.txt` will return all the instances of "indigo" inside the 'colors.txt' file.
+  - Commonly used 'grep' options:
+    - `i`: to make the search case insensitive.
+    - `-w`: to ensure that 'grep' only matches words, rather than fragments locate inside of other words. Eg. `grep -w "ate" random.txt` will only match the word "ate" and not "donate", "abbreviate", etc.
+    - `-r`: to perform a recursive search which will include all files under a directory, subdirectories and their files.
+    - `-c`: to count and display the number of lines that match the specified pattern.
+    - `-m<num>`: to limit the number of lines/matches 'grep' command will return. -m5 will display 5 results at max.
+    - `-n`: to display line numbers along with matching lines when searching for a pattern in a specific file.
+    - `-o`: to display only the matches instead of printing out the entire line containing each match.
+    - `A<n>`: to display matching lines as well as n lines immediately following each matching line.
+    - `B<n>`: to display matching lines as well as n lines preceding each matching line.
+    - `C<n>`: to show matching lines as well as display n lines before and after each matching line.
+- We can provide regular expressions to grep. Regular expressions helps us match complex patterns. The syntax for the same is as follows:
+   - `.` - matches any single character.
+   - `^` - matches the start of a line.
+   - `$` - matches the end of a line.
+   - `[abc]` - matches any character in the set.
+   - `[^abc]` - matches any char NOT in set.
+   - `[A-Z]` - matches characters in a range.
+   - `*` - repeat previous expression 0 or more times.
+   - `\` - escape meta-characters.
  
