@@ -92,4 +92,4 @@
    - `*` - repeat previous expression 0 or more times.
    - `\` - escape meta-characters.
 > Note: `-E` option must be used to enable the use of extended regular expressions when specifying search patterns.
- 
+- `ps -aux`: to display list of all the running tasks in Unix/ Unix-Like Operating Systems.
