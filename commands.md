@@ -91,4 +91,5 @@
    - `[A-Z]` - matches characters in a range.
    - `*` - repeat previous expression 0 or more times.
    - `\` - escape meta-characters.
+> Note: `-E` option must be used to enable the use of extended regular expressions when specifying search patterns.
  
