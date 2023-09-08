@@ -109,3 +109,23 @@
     - `w` - 'Write' permission.
     - `x` - 'Execute' permission.
   - Ex. `chmod g+w <fileName>`: Grants 'write' permission to the 'group'.
+- `Chmod` also supports another way of representing permission patterns using octal numbers (base 8):
+   |Octal| Binary|File Mode|
+   |-----|-------|---------|
+   |0|000|---|
+   |1|001|--x|
+   |2|010|-w-|
+   |3|011|-wx|
+   |4|100|r--|
+   |5|101|r-x|
+   |6|110|rw-|
+   |7|111|rwx|
+  - Ex. `chmod 664 <fileName>` sets the permissions as -rw-rw-r--.
+- `sudo`: to allow authorized users to execute commands with the privileges of the superuser (root).
+- `sudo -l`: to list the permissions and privileges granted to the current user or a specific user.
+- `chown <username> <fileName>`: to change the owner of a file or directory.
+- `chown :<groupName> <fileName>`: to change the group owner of a file.
+- `chown <username>:<groupName> <fileName>`: to change the owner and group owner of a file at the same time.
+- `groups <username>`: to display the names of the groups to which a particular user belongs to.
+- `addgroup <groupName>`: to create new groups.
+- `adduser <username> <groupName>`: to add user to a group.
