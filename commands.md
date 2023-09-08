@@ -1,4 +1,4 @@
-# Linux Command Line Cheatsheet
+# Linux Commands Cheatsheet
 
 - `whoami`: to display the username of the currently logged-in user.
 - `passwd`: to change the user's password.
@@ -54,7 +54,7 @@
 - `sudo updatedb`: to update the database used by locate command.
 - `find`: to list all the files and folders in the present directory.
 - `find <filePath>/`: to find files and folders by path.
-- `find -type f`: to search and list only the rexular files within the current directory and its sub-directories.
+- `find -type f`: to search and list only the regular files within the current directory and its sub-directories.
 - `find -type d`: to search and list for directories within the current directory and its sub-directories.
 - `find -name "<fileName>"` to search for a file with a specific pattern.
    - `-i` option can be used with `-name` option to avoid casing.
