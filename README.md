@@ -1,4 +1,5 @@
-**[Click here to view the cheatsheet](./commands.html)**
+**[Click here to view the cheatsheet](commands.md)** <br>
+**Last Updated: 09/10/2023**
 * * *
 ### Linux Commands Cheatsheet 🐧
 Whether you're new to Linux or just beginning your journey with the command line, this repository is your go-to-resource. Here, we'll explore a wide range of essential Linux commands, each with descriptions and examples. Whether you're a tech enthusiast, a developer, or simply curious, mastering the command line opens up new possibilities. 💡
