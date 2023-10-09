@@ -1,5 +1,7 @@
 # Linux Commands Cheatsheet
 
+**Note:** Replace `<placeholder>` with appropriate file-name or command option/s.
+
 - `whoami`: to display the username of the currently logged-in user.
 - `passwd`: to change the user's password.
 - `man <command>`: to display the manual pages of a command and their available options.
@@ -134,6 +136,7 @@
 - `unset <Variable_name>`: to remove environment variable or shell variable. Ex. `unset hello`
 - `source <fileName>`: to execute contents of a file in current shell or to refresh the environment variables. Ex. `source ~/.bashrc`
 - `alias <command_name>=<command>`: to create custom commands for frequently used or longer commands. Ex. `alias ll='ls -l'`
+- `unalias <alias_name>`: to remove or delete aliases that were previously defined using `alias` command. Ex. `unalias ll`
 > Note: aliases are usually written inside .bashrc file but can also be written in a separate file named `.bash_aliases` inside the home directory (~).
 - `which <command_name>`: to locate and display the path of an executable file associated with a given command. Ex. `which ls`
 - `crontab -e`: to edit the user's crontab file in unix/unix-like operating systems. The crontab file contains a list of scheduled tasks (cron jobs) that are executed at specified times or intervals.
