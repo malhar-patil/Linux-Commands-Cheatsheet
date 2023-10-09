@@ -129,3 +129,21 @@
 - `groups <username>`: to display the names of the groups to which a particular user belongs to.
 - `addgroup <groupName>`: to create new groups.
 - `adduser <username> <groupName>`: to add user to a group.
+- `printenv`: to display the current environment vriables.
+- `export <Variable_name>=<value>`: to set environment variables within a shell session. Ex. `export hello="Hello World!`
+- `unset <Variable_name>`: to remove environment variable or shell variable. Ex. `unset hello`
+- `source <fileName>`: to execute contents of a file in current shell or to refresh the environment variables. Ex. `source ~/.bashrc`
+- `alias <command_name>=<command>`: to create custom commands for frequently used or longer commands. Ex. `alias ll='ls -l'`
+> Note: aliases are usually written inside .bashrc file but can also be written in a separate file named `.bash_aliases` inside the home directory (~).
+- `which <command_name>`: to locate and display the path of an executable file associated with a given command. Ex. `which ls`
+- `crontab -e`: to edit the user's crontab file in unix/unix-like operating systems. The crontab file contains a list of scheduled tasks (cron jobs) that are executed at specified times or intervals.
+- `ps`: to view a list of all the running processes.
+  - Options to modify the output of `ps` command are:
+    - `-a` - Lists processes from all users.
+    - `-u` - Provides more detailed information, including the username of the process owner.
+    - `-x` - Shows processes that are not associated with a terminal.
+- `du`: to see the disk space usage of files and directories.
+   - Commonly used options with `du` command are:
+     - `-h` or `--human-readable`: Displays sizes in a human-readable format (ex. MB, KB, etc.)
+     - `-s` or `-summarize`: Displays only the total disk usage of each specified directory, rather than listing individual subdirectories.
+     - `-c` or `--total`: Provides total of disk usage for all specified directories.
