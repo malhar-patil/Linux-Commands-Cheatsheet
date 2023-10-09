@@ -1,4 +1,4 @@
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 title: Essential Linux Commands Guide
 description: This cheatsheet provides a comprehensive list of the most commonly used Linux terminal commands, organized by category. Each command is listed with a brief description and example usage.
 show_downloads: true
