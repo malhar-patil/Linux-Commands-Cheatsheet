@@ -12,6 +12,7 @@ Open your terminal (command prompt) and navigate to the directory where you want
 `git clone https://github.com/malhar-patil/Linux-Commands-Cheatsheet.git`
 * * *
 ### Additional Resources
+- [Useful terminal shortcuts](shortcuts.md)
 - [Operating systems Family Tree](https://eylenburg.github.io/os_familytree.htm)
 - [Bash Prompt Generator](https://ezprompt.net/)
 - [Crontab.guru](https://crontab.guru/)
