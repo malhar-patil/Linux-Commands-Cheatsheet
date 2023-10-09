@@ -137,6 +137,17 @@
 > Note: aliases are usually written inside .bashrc file but can also be written in a separate file named `.bash_aliases` inside the home directory (~).
 - `which <command_name>`: to locate and display the path of an executable file associated with a given command. Ex. `which ls`
 - `crontab -e`: to edit the user's crontab file in unix/unix-like operating systems. The crontab file contains a list of scheduled tasks (cron jobs) that are executed at specified times or intervals.
+   - Crontab syntax is as follows:
+     |a|b|c|d|e|command|
+     |-|-|-|-|-|-------|
+     |Minute|Hour|Day|Month|Day (of week)||
+     |0-59|0-23|1-31|1-12|0-6 (starting from sunday)|
+   - Ex. `30 * * * * <command>` will run the command at exactly 30th minute of every hour.
+   - Cron Characters:
+     - `*` - Any Value.
+     - `5,6` - List of values (5 and 6).
+     - `1-4` - Range of values (1 to 4).
+     - `*/5` - Step values (every 5).
 - `ps`: to view a list of all the running processes.
   - Options to modify the output of `ps` command are:
     - `-a` - Lists processes from all users.
