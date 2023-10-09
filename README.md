@@ -8,7 +8,7 @@ The command line is the direct line of communication with your computer, grantin
 Clone this repository to your local machine to access the cheat sheet offline. Here's how you can do it:<br>
 Open your terminal (command prompt) and navigate to the directory where you want to store this repository. Then, run the following command:<br>
 `git clone https://github.com/malhar-patil/Linux-Commands-Cheatsheet.git`
-
+* * *
 ### Additional Resources
 - [Operating systems Family Tree](https://eylenburg.github.io/os_familytree.htm)
 - [Bash Prompt Generator](https://ezprompt.net/)
